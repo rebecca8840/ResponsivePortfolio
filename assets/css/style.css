@@ -251,11 +251,27 @@ margin-top: 5px;
   margin-right: 550px;
 }
 
-
-*/ Media queries */
+  @-ms-viewport {
+    width: device-width;
+  }
 
   @media screen and (max-width: 980px) {
-    .boxbox .sideside {
-      width: 100%
+    .sideside {
+      width: 100%;
+    }
+  }
+
+    @media screen and (max-width: 768px) {
+    .sideside {
+      width: 70%;
+    }
+  }
+
+    @media screen and (max-width: 640px) {
+    .sideside {
+      width: 50%;
+    }
+    header {
+      position: static;
     }
   }
